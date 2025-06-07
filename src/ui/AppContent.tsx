@@ -5,6 +5,7 @@ import {WeddingWitnesses} from "./landing/weddingWitnesses/WeddingWitnesses";
 import {Memories} from "./landing/memories/Memories";
 import {Rsvp} from "./landing/rsvp/Rsvp";
 import {Toaster} from "react-hot-toast";
+import {Tables} from "./landing/tables/Tables";
 
 export const AppContent = () => {
     return <>
@@ -15,7 +16,7 @@ export const AppContent = () => {
         <WeddingWitnesses/>
         <Memories/>
         <Rsvp/>
-        {/* <Tables /> */}
+        <Tables/>
 
         <Toaster/>
     </>

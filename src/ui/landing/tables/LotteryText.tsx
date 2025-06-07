@@ -4,7 +4,7 @@ interface LotteryTextProps {
   text: string
 }
 
-const funnyWeddingTableNames: string[] = [
+export const funnyWeddingTableNames: string[] = [
   "Stolik Singli", "Teściowie w Szoku", "Ekipa Od Toastów", "Kuzyni z Daleka", "Przyjaciele Panny Młodej",
   "Przyjaciele Pana Młodego", "Zgrana Paczka", "Sto Lat Bez Końca", "Najlepsi Tancerze", "Pogromcy Tortu",
   "Śmietanka Towarzyska", "Elita Wesela", "Koneserzy Wódki", "Testosteron Team", "Damy i Dżentelmeni",
