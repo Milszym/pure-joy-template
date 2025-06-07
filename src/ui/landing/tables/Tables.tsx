@@ -3,7 +3,6 @@ import {useState} from "react";
 import {useTranslation} from "react-i18next";
 import {checkTable} from "../../../api/tablesApi";
 import {funnyWeddingTableNames, LotteryText} from "./LotteryText";
-import {PeachButton} from "../../components/button/PeachButton";
 import {showToast, ToastType} from "../../toast/toast/toast";
 import {withMyTheme} from "../../theme/theme";
 import {css} from "@emotion/react";

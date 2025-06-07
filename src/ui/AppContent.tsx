@@ -6,6 +6,7 @@ import {Memories} from "./landing/memories/Memories";
 import {Rsvp} from "./landing/rsvp/Rsvp";
 import {Toaster} from "react-hot-toast";
 import {Tables} from "./landing/tables/Tables";
+import { Schedule } from "./landing/schedule/Schedule";
 
 export const AppContent = () => {
     return <>
@@ -17,6 +18,7 @@ export const AppContent = () => {
         <Memories/>
         <Rsvp/>
         <Tables/>
+        <Schedule/>
 
         <Toaster/>
     </>

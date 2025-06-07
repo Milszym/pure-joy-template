@@ -17,7 +17,7 @@ const ButtonPrimaryStyle = withMyTheme((theme: Theme, additionalCss?: any) => cs
 
         &:hover {
             background-color: rgba(196, 85, 38, 0.04);
-            border-color: ${theme.palette.primary.light};
+            border-color: ${theme.palette.primary.main};
         }
     }
 
@@ -27,7 +27,7 @@ const ButtonPrimaryStyle = withMyTheme((theme: Theme, additionalCss?: any) => cs
         box-shadow: 0 4px 8px ${alpha(theme.palette.primary.main, 0.5)};
 
         &:hover {
-            background-color: ${theme.palette.primary.light};
+            background-color: ${theme.palette.primary.main};
         }
     }
 

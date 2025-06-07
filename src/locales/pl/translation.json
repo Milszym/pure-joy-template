@@ -26,6 +26,20 @@
             "mapAlt": "Mapa parkingu"
         }
     },
+    "schedule": {
+        "title": "Harmonogram",
+        "description": "Całe wydarzenie będzie raczej zmieniało się na bieżąco, ale przedstawiamy Wam orientacyjny harmonogram ślubu i wesela. Najważniejsze, żębyśmy się wszyscy dobrze bawili, więc spędźcie ten czas w swoim własnym tempie 😊",
+        "scheduleEvent1": "Ceremonia",
+        "scheduleEvent2": "Życzenia",
+        "scheduleEvent3": "Obiad",
+        "scheduleEvent4": "Tort",
+        "scheduleEvent5": "Pierwszy taniec",
+        "scheduleEvent6": "Sesja zdjęciowa",
+        "scheduleEvent7": "Atrakcja niespodzianka",
+        "scheduleEvent8": "Kolacja I",
+        "scheduleEvent9": "Oczepiny",
+        "scheduleEvent10": "Kolacja II"
+    },
     "faq": {
         "title": "Więcej informacji"
     },

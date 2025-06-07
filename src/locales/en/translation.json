@@ -26,6 +26,20 @@
       "mapAlt": "Parking map"
     }
   },
+  "schedule": {
+    "title": "Schedule",
+    "description": "The whole event will change as we go, but we present you with an approximate schedule of the wedding and reception. The most important thing is that we all have a good time, so spend this time at your own pace 😊",
+    "scheduleEvent1": "Ceremony",
+    "scheduleEvent2": "Wishes",
+    "scheduleEvent3": "Dinner",
+    "scheduleEvent4": "Cake",
+    "scheduleEvent5": "First Dance",
+    "scheduleEvent6": "Photo Session",
+    "scheduleEvent7": "Surprise Attraction",
+    "scheduleEvent8": "Supper I",
+    "scheduleEvent9": "Oczepiny",
+    "scheduleEvent10": "Supper II"
+  },
   "faq": {
     "title": "Więcej informacji"
   },
