@@ -8,6 +8,7 @@ import {Toaster} from "react-hot-toast";
 import {Tables} from "./landing/tables/Tables";
 import { Schedule } from "./landing/schedule/Schedule";
 import { Menu } from "./landing/menu/Menu";
+import { FloatingButtons } from "./components/FloatingButtons";
 
 export const AppContent = () => {
     return <>
@@ -22,6 +23,7 @@ export const AppContent = () => {
         <Schedule/>
         <Menu />
 
+        <FloatingButtons />
         <Toaster/>
     </>
 }

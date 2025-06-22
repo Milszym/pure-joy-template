@@ -73,7 +73,7 @@
     },
     "meatBuffet": {
       "title": "Roasted Meat Buffet",
-      "description": "• Loin roasted with thyme and dried apricots\n• Pork neck with marjoram and dried tomatoes\n• Aromatic bacon with herbs\n• Slow-roasted beef\n• White sausage slowly roasted with herbs and beer\n• Beef tartare\n• Hunter’s pâté\n• Lard with cracklings\n• Pickles: marinated plums, horseradish, beetroot with horseradish\n• Sauces: tartar, horseradish, sriracha, salsa verde"
+      "description": "• Loin roasted with thyme and dried apricots\n• Pork neck with marjoram and dried tomatoes\n• Aromatic bacon with herbs\n• Slow-roasted beef\n• White sausage slowly roasted with herbs and beer\n• Beef tartare\n• Hunter's pâté\n• Lard with cracklings\n• Pickles: marinated plums, horseradish, beetroot with horseradish\n• Sauces: tartar, horseradish, sriracha, salsa verde"
     },
     "saladBuffet": {
       "title": "Salad Buffet 🥗",
@@ -119,5 +119,6 @@
     "search": "Wyszukaj stół",
     "tableNotFound": "Nie znaleziono stołu, upewnij się, że wpisałeś poprawne imię i nazwisko.",
     "formNotFilledError": "Wpisz proszę imie i nazwisko :)."
-  }
+  },
+  "navigate": "Navigate"
 }
