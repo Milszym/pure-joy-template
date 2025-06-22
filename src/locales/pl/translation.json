@@ -60,22 +60,28 @@
             "description": "Barszczyk z pasztetkiem"
         },
         "drinks": {
-            "title": "Napoje"
+            "title": "Napoje",
+            "description": "• Kawa\n• Herbata\n• Woda z cytryną i miętą\n• Soki\n• Lemoniada cytrusowa\n• Coca-Cola\n• Coca-Cola Zero\n• Sprite\n• Tonic\n\n<i>Alkohole</i>\n• Wódka - Ogiński\n• Whisky - Jameson\n• Gin - Bombay Sapphire\n• Jaggermeister\n• Martini Bianco\n• Wino Białe - Octavo De Arte (Chardonnay)\n• Wino Czerwone - Octavo De Arte (Cabarnet Sauvignon)"
         },
         "sweetBuffet": {
-            "title": "Słodki bufet 🥗"
+            "title": "Słodki bufet 🥗",
+            "description": "• Musy w monoporcjach malinowy/ mango/ czekoladowy\n• Tartaletki z kremem i owocami\n• Mini bezy Pavlova/\n• Mini szarlotki\n• Tiramisu w pucharkach\n• Mocno czekoladowe brownie z orzechami\n• Sernik z polewą czekoladową\n• Sernik na zimno z owocami\n• Owoce sezonowe"
         },
         "polishBuffet": {
-            "title": "Bufet Polskich Wędin"
+            "title": "Bufet Polskich Wędin",
+            "description": "• Szynka tradycyjna z tłuszczykiem\n• Kumpiak podlaski\n• Schab delikatnie wędzony dymem olchowym\n• Karczek wędzony\n• Szynka dojrzewająca\n• Suszona kiełbaska polska\n• Kiełbasa krucha\n• Kindziuk litewski\n• sosy : tatarski, chrzanowy, sriracha, salsa verde\n• marynowane pieczarki, octowe węgierki, korniszony, ogórki kiszone, konfitura z czerwonej\n• cebuli\n• Wiejskie pieczywo, masło"
         },
         "meatBuffet": {
-            "title": "Bufet Mięs pieczystych"
+            "title": "Bufet Mięs pieczystych",
+            "description": "• Schab pieczony w tymianku i suszonych morelach\n• Karczek w majeranku i suszonych pomidorach\n• Boczek aromatyczny w ziołach\n• Wołowina długo pieczona\n• Biała kiełbasa wolno pieczona w ziołach i piwie\n• Tatarki wołowe\n• Pasztet myśliwski\n• Smalec ze skwarkami\n• Marynaty: marynowane węgierki, chrzan, ćwikła z chrzanem\n• sosy : tatarski, chrzanowy, sriracha, salsa verde"
         },
         "saladBuffet": {
-            "title": "Bufet Sałatkowy 🥗"
+            "title": "Bufet Sałatkowy 🥗",
+            "description": "• <i>Sałatka nicejska</i> (Sałata rzymska/sałata lodow/ pomidorki cherry/ tuńczyk/ fasolka szparagowa/ ziemniaczki gotowane/czerwona cebulka/ oliwki zielone i czarne/ kapary/ sos winegret)\n\n• <i>Sałatka letnia</i> (Sałata lodowa/ rukola/ młody szpinak/ mini pomidorki/ zielony ogórek/ oliwki zielone i czarne/ karczoch/ zielona cebulka/feta/ crostini/ sezam biały i czarny/ pestki słonecznika Sosy: winegret, jogurtowo- czosnkowy)\n\n• <i>Sałatka ze słonecznej Italii</i> (Młody szpinak/ rukola/mix sałat/ mandarynki/ pomarańcze/ granat/ sos winegret)\n\n• <i>Kisir śródziemnomorski</i> (Kasza bulgur/ cebula dymka/ koperek/ natka pietruszki/ pomidory/zielona papryka/ oliwka/ ekstrakt z granatu/ koncentrat z papryki/ sałata rzymska/ sok z cytryny/ kumin)\n\n• <i>Lekka sałatka z ziemniaczków pieczonych we włoskim stylu</i> (Ziemniaczki pieczone/żółta fasolka szparagowa/czerwona cebula/ suszone pomidory w oleju/zielona pietruszka/ kapary/ sos na bazie czerwonego octu winnego)\n\n• <i>Sałatka z buraków z kozim serem w malinowym winegrecie</i> (Buraczki gotowane/ kozi ser/ orzechy/ malinowy winegret)"
         },
         "varietyBuffet": {
-            "title": "Bufet Różnorodności 🥗"
+            "title": "Bufet Różnorodności 🥗",
+            "description": "• Tatar z suszonych pomidorów i cukinii/ bakłażana\n• Tatarki z marynowanego łososia\n• Tartaletki wytrawne z kolorowymi pastami\n• Wybór ryb wędzonych\n• Krewetki z mango\n• Krewetki z melonem i szynką parmeńską\n• Deska serów włoskich i lokalnych z owocami, orzechami i grissini\n• Śledziki marynowane w brzoskwiniach i żurawinie z oliwką\n• Śledziki w gęstym pomidorowo- paprykowym sosie z warzywami\n• Hummus tradycyjny\n• Sosy: kaparowy, winno- koperkowy, jogurtowo- czosnkowy"
         }
     },
     "faq": {

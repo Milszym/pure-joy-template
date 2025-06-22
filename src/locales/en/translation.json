@@ -60,22 +60,28 @@
       "description": "Borscht with a savory pastry"
     },
     "drinks": {
-      "title": "Drinks"
-    },
+      "title": "Drinks",
+      "description": "• Kawa\n• Herbata\n• Woda z cytryną i miętą\n• Soki\n• Lemoniada cytrusowa\n• Coca-Cola\n• Coca-Cola Zero\n• Sprite\n• Tonic\n\n<i>Alkohole</i>\n• Wódka - Ogiński\n• Whisky - Jameson\n• Gin - Bombay Sapphire\n• Jaggermeister\n• Martini Bianco\n• Wino Białe - Octavo De Arte (Chardonnay)\n• Wino Czerwone - Octavo De Arte (Cabarnet Sauvignon)"
+    },    
     "sweetBuffet": {
-      "title": "Sweet Buffet 🥗"
+      "title": "Sweet Buffet 🥗",
+      "description": "• Mousses in individual portions: raspberry / mango / chocolate\n• Tartlets with cream and fruit\n• Mini Pavlova meringues\n• Mini apple pies\n• Tiramisu in cups\n• Rich chocolate brownie with nuts\n• Cheesecake with chocolate glaze\n• No-bake cheesecake with fruit\n• Seasonal fruits"
     },
     "polishBuffet": {
-      "title": "Polish Cold Cuts Buffet"
+      "title": "Polish Cold Cuts Buffet",
+      "description": "• Traditional ham with fat\n• Podlasie kumpiak\n• Loin gently smoked with alder wood\n• Smoked neck\n• Cured ham\n• Dried Polish sausage\n• Crunchy sausage\n• Lithuanian kindziuk\n• Sauces: tartar, horseradish, sriracha, salsa verde\n• Marinated mushrooms, vinegar plums, pickled gherkins, fermented cucumbers, red onion confit\n• Country bread, butter"
     },
     "meatBuffet": {
-      "title": "Roasted Meat Buffet"
+      "title": "Roasted Meat Buffet",
+      "description": "• Loin roasted with thyme and dried apricots\n• Pork neck with marjoram and dried tomatoes\n• Aromatic bacon with herbs\n• Slow-roasted beef\n• White sausage slowly roasted with herbs and beer\n• Beef tartare\n• Hunter’s pâté\n• Lard with cracklings\n• Pickles: marinated plums, horseradish, beetroot with horseradish\n• Sauces: tartar, horseradish, sriracha, salsa verde"
     },
     "saladBuffet": {
-      "title": "Salad Buffet 🥗"
+      "title": "Salad Buffet 🥗",
+      "description": "• <i>Niçoise Salad</i> (Romaine lettuce/iceberg lettuce/cherry tomatoes/tuna/green beans/boiled baby potatoes/red onion/green and black olives/capers/vinaigrette dressing)\n\n• <i>Summer Salad</i> (Iceberg lettuce/arugula/baby spinach/mini tomatoes/green cucumber/green and black olives/artichoke/green onion/feta cheese/crostini/white and black sesame seeds/sunflower seeds Sauces: vinaigrette, yogurt-garlic)\n\n• <i>Salad from Sunny Italy</i> (Baby spinach/arugula/mixed greens/tangerines/oranges/pomegranate/vinaigrette dressing)\n\n• <i>Mediterranean Kisir</i> (Bulgur wheat/spring onion/dill/parsley/tomatoes/green pepper/olive/grenade molasses/paprika paste/romaine lettuce/lemon juice/cumin)\n\n• <i>Light Salad with Italian-Style Roasted Potatoes</i> (Roasted baby potatoes/yellow string beans/red onion/sun-dried tomatoes in oil/parsley/capers/dressing based on red wine vinegar)\n\n• <i>Beetroot Salad with Goat Cheese in Raspberry Vinaigrette</i> (Boiled beetroot/goat cheese/nuts/raspberry vinaigrette)"
     },
     "varietyBuffet": {
-      "title": "Variety Buffet 🥗"
+      "title": "Variety Buffet 🥗",
+      "description": "• Tartare of dried tomatoes and zucchini/eggplant\n• Tartare of marinated salmon\n• Savory tartlets with colorful spreads\n• Selection of smoked fish\n• Shrimps with mango\n• Shrimps with melon and Parma ham\n• Platter of Italian and local cheeses with fruits, nuts, and grissini\n• Marinated herring with peaches and cranberries with olives\n• Herring in thick tomato and bell pepper sauce with vegetables\n• Traditional hummus\n• Sauces: caper, wine-dill, yogurt-garlic"
     }
   },
   "faq": {

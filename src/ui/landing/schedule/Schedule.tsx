@@ -15,17 +15,20 @@ import {
     Celebration,
     Fastfood,
 } from "@mui/icons-material"
-import { Fullscreen } from "../../components/Fullscreen"
+
+export const SCHEDULE_ID = "schedule"
 
 const ScheduleContentStyle = withMyTheme((theme) => css`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 2rem;
     justify-content: center;
     height: 100vh;
     background: ${theme.palette.background.default};
     color: ${theme.palette.text.primary};
     ${mobileCss(`
+        padding-top: 5vh;
         height: auto;
         width: 100vw;
     `)}
@@ -72,7 +75,8 @@ const ScheduleGridStyle = withMyTheme(() => css`
         grid-auto-flow: row;
         gap: 1.5rem;
         max-width: none;
-        width: 100vw;
+        width: 85vw;
+        margin-bottom: 5vh;
         padding-left: 5vw;
         padding-right: 5vw;
     `)}
@@ -169,7 +173,7 @@ export const Schedule = () => {
     ]
 
     return (
-        <Fullscreen additionalCss={ScheduleContentStyle}>
+        <div id={SCHEDULE_ID} css={ScheduleContentStyle}>
             <div css={ScheduleTitleStyle}>
                 {t('schedule.title')}
             </div>
@@ -186,6 +190,6 @@ export const Schedule = () => {
                     />
                 ))}
             </div>
-        </Fullscreen>
+        </div>
     )
 }

@@ -17,6 +17,10 @@ import {
     Fastfood
 } from "@mui/icons-material"
 import { Fullscreen } from "../../components/Fullscreen"
+import { Dialog, DialogContent, DialogTitle, Theme } from "@mui/material"
+import { useState } from "react"
+
+export const MENU_ID = "menu"
 
 const MenuContentStyle = withMyTheme((theme) => css`
     display: flex;
@@ -56,7 +60,8 @@ const MenuGridStyle = withMyTheme(() => css`
     ${mobileCss(`
         gap: 0.5rem;
         height: auto;
-        width: 100vw;
+        width: 85vw;
+        margin-bottom: 5vh;
         overflow-y: visible;
         flex-wrap: no-wrap;
     `)}
@@ -132,14 +137,50 @@ const MenuButtonStyle = withMyTheme(() => css`
     `)}
 `)
 
+const MenuDialogContentStyle = withMyTheme((theme) => css`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+`)
+
+const MenuDialogTitleStyle = withMyTheme((theme: Theme) => css`
+    font-family: ${theme.typography.h1.fontFamily};
+    font-weight: ${theme.typography.h1.fontWeight};
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1em;
+`)
+
+const MenuDialogDescriptionStyle = withMyTheme((theme: Theme) => css`
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+    white-space: pre-line;
+    font-family: ${theme.typography.body1.fontFamily};
+    font-weight: 300;
+
+    ${mobileCss(`
+        font-size: 4vw;
+    `)}
+`)
+
+const MenuDialogButtonWrapperStyle = withMyTheme(() => css`
+    margin-top: 3vh;
+`)
+
 interface MenuItemProps {
     title: string;
     description?: string;
     icon: React.ReactNode;
     showButton?: boolean;
+    onButtonClick?: () => void;
 }
 
-const MenuItem = ({ title, description, icon, showButton = true }: MenuItemProps) => {
+const MenuItem = ({ title, description, icon, showButton = true, onButtonClick }: MenuItemProps) => {
     const { t } = useTranslation()
 
     return <div css={MenuItemStyle}>
@@ -158,7 +199,7 @@ const MenuItem = ({ title, description, icon, showButton = true }: MenuItemProps
                 variant="outlined"
                 additionalCss={MenuButtonStyle}
                 enabled={true}
-                onClick={() => { }} // No action as requested
+                onClick={onButtonClick}
             />
         )}
     </div>
@@ -166,8 +207,28 @@ const MenuItem = ({ title, description, icon, showButton = true }: MenuItemProps
 
 export const Menu = () => {
     const { t } = useTranslation()
+    const [selectedMenuItem, setSelectedMenuItem] = useState<{ title: string; description: string } | null>(null)
+    const [modalOpen, setModalOpen] = useState(false)
 
-    const menuItems = [
+    const handleOpenModal = (title: string, descriptionKey: string) => {
+        setSelectedMenuItem({
+            title: title,
+            description: t(descriptionKey)
+        })
+        setModalOpen(true)
+    }
+
+    const handleCloseModal = () => {
+        setModalOpen(false)
+    }
+
+    const menuItems: Array<{
+        title: string;
+        description?: string;
+        icon: React.ReactNode;
+        showButton: boolean;
+        descriptionKey?: string;
+    }> = [
         {
             title: t('menu.soup.title'),
             description: t('menu.soup.description'),
@@ -196,42 +257,48 @@ export const Menu = () => {
             title: t('menu.drinks.title'),
             description: undefined,
             icon: <LocalBar />,
-            showButton: true
+            showButton: true,
+            descriptionKey: 'menu.drinks.description'
         },
         {
             title: t('menu.sweetBuffet.title'),
             description: undefined,
             icon: <Cake />,
-            showButton: true
+            showButton: true,
+            descriptionKey: 'menu.sweetBuffet.description'
         },
         {
             title: t('menu.polishBuffet.title'),
             description: undefined,
             icon: <SetMeal />,
-            showButton: true
+            showButton: true,
+            descriptionKey: 'menu.polishBuffet.description'
         },
         {
             title: t('menu.meatBuffet.title'),
             description: undefined,
             icon: <LunchDining />,
-            showButton: true
+            showButton: true,
+            descriptionKey: 'menu.meatBuffet.description'
         },
         {
             title: t('menu.saladBuffet.title'),
             description: undefined,
             icon: <LocalFlorist />,
-            showButton: true
+            showButton: true,
+            descriptionKey: 'menu.saladBuffet.description'
         },
         {
             title: t('menu.varietyBuffet.title'),
             description: undefined,
             icon: <Fastfood />,
-            showButton: true
+            showButton: true,
+            descriptionKey: 'menu.varietyBuffet.description'
         }
     ]
 
     return (
-        <Fullscreen id="menu" additionalCss={MenuContentStyle}>
+        <div id={MENU_ID} css={MenuContentStyle}>
             <div css={MenuTitleStyle}>
                 {t('menu.title')}
             </div>
@@ -243,9 +310,31 @@ export const Menu = () => {
                         description={item.description}
                         icon={item.icon}
                         showButton={item.showButton}
+                        onButtonClick={() => handleOpenModal(item.title, item.descriptionKey || '')}
                     />
                 ))}
             </div>
-        </Fullscreen>
+            
+            <Dialog onClose={handleCloseModal} open={modalOpen}>
+                <DialogTitle>
+                    <div css={MenuDialogTitleStyle}>
+                        {selectedMenuItem?.title}
+                    </div>
+                </DialogTitle>
+                <DialogContent>
+                    <div css={MenuDialogContentStyle}>
+                        {!!selectedMenuItem && <div css={MenuDialogDescriptionStyle} dangerouslySetInnerHTML={{ __html: selectedMenuItem?.description }}/> }
+                        <div css={MenuDialogButtonWrapperStyle}>
+                            <MyButton
+                                variant="contained"
+                                colorVariant="primary"
+                                text={t('location.close')}
+                                onClick={handleCloseModal}
+                            />
+                        </div>
+                    </div>
+                </DialogContent>
+            </Dialog>
+        </div>
     )
 }
