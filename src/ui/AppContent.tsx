@@ -20,7 +20,7 @@ export const AppContent = () => {
         <Memories/>
         <Rsvp/>
         <Tables/>
-        <Schedule/>
+        {/* <Schedule/> */}
         <Menu />
 
         <FloatingButtons />
