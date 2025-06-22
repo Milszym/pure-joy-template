@@ -40,6 +40,44 @@
     "scheduleEvent9": "Oczepiny",
     "scheduleEvent10": "Supper II"
   },
+  "menu": {
+    "title": "Menu",
+    "seeDetails": "See details",
+    "soup": {
+      "title": "Soup",
+      "description": "<i>Served in bowls</i>\n• Creamy roasted vegetable soup with sunflower seeds"
+    },
+    "mainCourse": {
+      "title": "Main Course",
+      "description": "<i>Served on platters</i>\n• Duck leg confit with plum sauce\n• Palace stuffed pork roll with mushroom sauce\n• King of côtelettes - de volaille 👑\n• Turkey breast roasted with cranberries and apples\n• Indian vegetable curry with chickpeas and naan bread 🥗\n<i>Sides:</i>\n• Boiled potatoes with dill\n• Silesian dumplings\n• Basmati rice\n• Tender red cabbage with pomegranate, cucumber, pepper, chives in vinaigrette sauce and beetroot"
+    },
+    "supper1": {
+      "title": "Supper I",
+      "description": "Tuscan goulash\n<i>Sides:</i>\n• Rice\n• Light salad: white cabbage, leek, corn with lime-based marinade"
+    },
+    "supper2": {
+      "title": "Supper II",
+      "description": "Borscht with a savory pastry"
+    },
+    "drinks": {
+      "title": "Drinks"
+    },
+    "sweetBuffet": {
+      "title": "Sweet Buffet 🥗"
+    },
+    "polishBuffet": {
+      "title": "Polish Cold Cuts Buffet"
+    },
+    "meatBuffet": {
+      "title": "Roasted Meat Buffet"
+    },
+    "saladBuffet": {
+      "title": "Salad Buffet 🥗"
+    },
+    "varietyBuffet": {
+      "title": "Variety Buffet 🥗"
+    }
+  },
   "faq": {
     "title": "Więcej informacji"
   },
@@ -65,7 +103,8 @@
     "message": "Wiadomość, dieta, informacje o dzieciach i noclegu",
     "formNotFilledError": "Proszę wypełnić wszystkie pola formularza.",
     "send": "Wyślij",
-    "thankYou": "Dziękujemy! 😊 <br />Do zobaczenia! 👋"
+    "thankYou": "Dziękujemy! 😊 <br />Do zobaczenia! 👋",
+    "closed": "RSVP is now closed. We look forward to seeing you at the wedding!"
   },
   "tables": {
     "title": "Stoły",

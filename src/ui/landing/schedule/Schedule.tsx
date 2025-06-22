@@ -13,20 +13,21 @@ import {
     AutoAwesome,
     LocalDining,
     Celebration,
-    Fastfood
+    Fastfood,
 } from "@mui/icons-material"
+import { Fullscreen } from "../../components/Fullscreen"
 
 const ScheduleContentStyle = withMyTheme((theme) => css`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4rem 2rem;
-    min-height: 100vh;
+    height: 100vh;
     background: ${theme.palette.background.default};
     color: ${theme.palette.text.primary};
     ${mobileCss(`
-        padding: 2rem 1rem;
+        height: auto;
+        width: 100vw;
     `)}
 `)
 
@@ -63,13 +64,17 @@ const ScheduleGridStyle = withMyTheme(() => css`
     grid-template-rows: repeat(5, 1fr);
     grid-auto-flow: column;
     gap: 2rem;
-    max-width: 800px;
+    max-width: 50vw;
     width: 100%;
     ${mobileCss(`
         grid-template-columns: 1fr;
         grid-template-rows: repeat(10, 1fr);
         grid-auto-flow: row;
         gap: 1.5rem;
+        max-width: none;
+        width: 100vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
     `)}
 `)
 
@@ -152,7 +157,7 @@ export const Schedule = () => {
 
     const scheduleItems = [
         { time: "16:30", event: t('schedule.scheduleEvent1'), icon: <Church /> },
-        { time: "16:50", event: t('schedule.scheduleEvent2'), icon: <CardGiftcard /> },
+        { time: "17:00", event: t('schedule.scheduleEvent2'), icon: <CardGiftcard /> },
         { time: "17:45", event: t('schedule.scheduleEvent3'), icon: <Restaurant /> },
         { time: "18:30", event: t('schedule.scheduleEvent4'), icon: <Cake /> },
         { time: "19:00", event: t('schedule.scheduleEvent5'), icon: <MusicNote /> },
@@ -164,7 +169,7 @@ export const Schedule = () => {
     ]
 
     return (
-        <section id="schedule" css={ScheduleContentStyle}>
+        <Fullscreen additionalCss={ScheduleContentStyle}>
             <div css={ScheduleTitleStyle}>
                 {t('schedule.title')}
             </div>
@@ -181,6 +186,6 @@ export const Schedule = () => {
                     />
                 ))}
             </div>
-        </section>
+        </Fullscreen>
     )
 }

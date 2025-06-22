@@ -11,6 +11,7 @@ import {mobileCss} from "../../theme/isMobile";
 import {Fullscreen} from "../../components/Fullscreen";
 import {MyInput} from "../../components/input/MyInput";
 import {MyButton} from "../../components/button/MyButton";
+import { isTodayBefore } from '../../util/dateUtils';
 
 const RsvpContent = withMyTheme(() => css`
     display: flex;
@@ -126,6 +127,9 @@ export const Rsvp = () => {
     const [emailSent, setEmailSent] = useState(false)
     const [sendEnabled, setSendEnabled] = useState(true)
 
+    // Only show RSVP if today is before June 26, 2025
+    const rsvpOpen = isTodayBefore('2025-07-01');
+
     const sendEmail = async () => {
         if (!validate()) {
             return
@@ -172,50 +176,50 @@ export const Rsvp = () => {
         setEmail(newEmail)
     }
 
-    return <Fullscreen id="rsvp" additionalCss={RsvpContent}>
+    return rsvpOpen ? <Fullscreen id="rsvp" additionalCss={RsvpContent}>
         <div css={RsvpTitle}>{t('rsvp.title')}</div>
         <br/>
-        <div css={RsvpDescription}>
-            {t('rsvp.description1')}
-            <br/><br/>
-            {t('rsvp.description2')}
-        </div>
-        <br/>
-        {!emailSent ? <>
-            <div css={RsvpInputs}>
-                <MyInput placeholder={t('rsvp.who')}
-                         onChange={(value) => onWhoChanged(value)}
-                         value={who}
-                         additionalCss={RsvpInputText}/>
-                <br/>
-                <MyInput additionalCss={RsvpInputText}
-                         multiline
-                         rows={3}
-                         value={message}
-                         placeholder={t('rsvp.message')}
-                         onChange={(value) => onMessageChanged(value)} />
-                <br/>
-                <MyInput placeholder={t('rsvp.email')}
-                         value={email}
-                         type="email"
-                         autoComplete="email"
-                         onChange={(value) => onEmailChanged(value)}
-                         additionalCss={RsvpInputText}/>
+            <div css={RsvpDescription}>
+                {t('rsvp.description1')}
+                <br/><br/>
+                {t('rsvp.description2')}
             </div>
-            <MyButton text={t('rsvp.send')} variant={"contained"} additionalCss={RsvpButton} enabled={sendEnabled} onClick={sendEmail}/>
-        </> : <div css={RsvpThankYouTitle}>
-            {t('rsvp.thankYou')}!
-        </div>}
-        <br/>
-        <div css={RsvpOurContacts}>
-            <div css={RsvpOurContact}>
-                {t('rsvp.firstName')} <PhoneNumber phoneNumber={MainConfig.rsvp.firstPhoneNumber}/>
+            <br/>
+            {!emailSent ? <>
+                <div css={RsvpInputs}>
+                    <MyInput placeholder={t('rsvp.who')}
+                             onChange={(value) => onWhoChanged(value)}
+                             value={who}
+                             additionalCss={RsvpInputText}/>
+                    <br/>
+                    <MyInput additionalCss={RsvpInputText}
+                             multiline
+                             rows={3}
+                             value={message}
+                             placeholder={t('rsvp.message')}
+                             onChange={(value) => onMessageChanged(value)} />
+                    <br/>
+                    <MyInput placeholder={t('rsvp.email')}
+                             value={email}
+                             type="email"
+                             autoComplete="email"
+                             onChange={(value) => onEmailChanged(value)}
+                             additionalCss={RsvpInputText}/>
+                </div>
+                <MyButton text={t('rsvp.send')} variant={"contained"} additionalCss={RsvpButton} enabled={sendEnabled} onClick={sendEmail}/>
+            </> : <div css={RsvpThankYouTitle}>
+                {t('rsvp.thankYou')}!
+            </div>}
+            <br/>
+            <div css={RsvpOurContacts}>
+                <div css={RsvpOurContact}>
+                    {t('rsvp.firstName')} <PhoneNumber phoneNumber={MainConfig.rsvp.firstPhoneNumber}/>
+                </div>
+                <div css={RsvpOurContact}>
+                    {t('rsvp.secondName')} <PhoneNumber phoneNumber={MainConfig.rsvp.secondPhoneNumber}/>
+                </div>
             </div>
-            <div css={RsvpOurContact}>
-                {t('rsvp.secondName')} <PhoneNumber phoneNumber={MainConfig.rsvp.secondPhoneNumber}/>
-            </div>
-        </div>
-    </Fullscreen>
+    </Fullscreen> : <></>
 }
 
 const PhoneNumber = (props: { phoneNumber: string }) => {

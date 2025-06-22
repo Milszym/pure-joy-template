@@ -33,6 +33,7 @@ const TablesContentStyle = withMyTheme(() => css`
 const TablesTitleStyle = withMyTheme((theme) => css`
     font-size: clamp(2rem, 5vw, 5rem);
     font-family: ${theme.typography.h1.fontFamily};
+    color: ${theme.palette.primary.main};
     ${mobileCss(`
         font-size: clamp(2rem, 5vh, 5rem);
     `)}

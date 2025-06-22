@@ -40,6 +40,44 @@
         "scheduleEvent9": "Oczepiny",
         "scheduleEvent10": "Kolacja II"
     },
+    "menu": {
+        "title": "Menu",
+        "seeDetails": "Zobacz szczegóły",
+        "soup": {
+            "title": "Zupa",
+            "description": "<i>Serwowana w wazach</i>\n• Rosół potrójny z domowym makaronem\n• Kremowa zupa z pieczonych warzyw z pestkami słonecznika"
+        },
+        "mainCourse": {
+            "title": "Drugie danie",
+            "description": "<i>Podawane na półmiskach</i>\n• Konfitowane udko z kaczki (sos śliwkowy)\n• Zraz pałacowy (sos grzybowy)\n• Królewski Kotlet de volaille 👑\n• Pierś indycza pieczona w żurawinach i jabłkach\n• Curry indyjskie warzywne z ciecierzycą/chlebek naan 🥗\n<i>Dodatki:</i>\n• Ziemniaki gotowane z koperkiem\n• kluski śląskie\n• ryż basmati\n• krucha kapusta czerwona/granat/ogórek/papryka/szczypiorek z sosem vineegret/buraczki"
+        },
+        "supper1": {
+            "title": "Kolacja I",
+            "description": "Gulasz tajski\n<i>Dodatki:</i>\n• ryż\n• lekka sałatka: kapusta biała/por/kukurydza/marynata na bazie limonki"
+        },
+        "supper2": {
+            "title": "Kolacja II",
+            "description": "Barszczyk z pasztetkiem"
+        },
+        "drinks": {
+            "title": "Napoje"
+        },
+        "sweetBuffet": {
+            "title": "Słodki bufet 🥗"
+        },
+        "polishBuffet": {
+            "title": "Bufet Polskich Wędin"
+        },
+        "meatBuffet": {
+            "title": "Bufet Mięs pieczystych"
+        },
+        "saladBuffet": {
+            "title": "Bufet Sałatkowy 🥗"
+        },
+        "varietyBuffet": {
+            "title": "Bufet Różnorodności 🥗"
+        }
+    },
     "faq": {
         "title": "Więcej informacji"
     },
@@ -65,6 +103,7 @@
         "message": "Wiadomość, dieta, informacje o dzieciach i noclegu. W przypadku chęci noclegu, podaj również numer telefonu",
         "formNotFilledError": "Proszę wypełnić wszystkie pola formularza.",
         "send": "Wyślij",
-        "thankYou": "Dziękujemy! 😊 <br />Do zobaczenia! 👋"
+        "thankYou": "Dziękujemy! 😊 <br />Do zobaczenia! 👋",
+        "closed": "RSVP jest już zamknięte. Do zobaczenia na weselu!"
     }
 }
